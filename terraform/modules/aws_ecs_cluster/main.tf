@@ -2,7 +2,7 @@ resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr
   
   tags       = {
-    Name = "VPC WP"
+    Name = var.vpc_name
     Env  = var.env
   }
 }
